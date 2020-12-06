@@ -1,0 +1,28 @@
+server:
+  port: 9090
+  
+spring:  application:    name: api-gateway
+  profiles: 
+    active:
+    - dev
+    
+#Eureka Configs
+#eureka:
+#  instance:
+#    hostname: localhost
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka
+#      
+##Actuator Config
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include:
+#        - "*" #this will add all actuator endpoints
+#  endpoint:
+#    health:
+#      show-details: always
